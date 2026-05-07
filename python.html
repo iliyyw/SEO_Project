@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Iliyyw's Professional SEO and Python Learning Project.Explore automation and web development.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python for SEO | Learn Automation</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+    </nav>
+    
+    <main class="python-container">
+        <header class="python-header">
+            <i class="fab fa-python fa-4x"></i>
+            <h1>Python & SEO Automation</h1>
+            <p>Why manually check 1000 pages when you can write a script</p>
+        </header>
+
+        <section class="code-section">
+            <h2>Example: Simple Status Checker</h2>
+            <p>This script checks if a websites is up and running:</p>
+            <div class="code-wrapper"><pre><code>
+                import request
+                url = "https://your-site.com"
+                response = request.get(url)
+
+                if response.status_code==200:
+                   print("Site is Healthy!")
+                else:
+                   print("Check Your server")
+            </code></pre>
+        </div>
+        </section>
+    </main>
+</body>
+</html>
