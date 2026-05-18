@@ -2,38 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Iliyyw's Professional SEO and Python Learning Project.Explore automation and web development.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python for SEO | Learn Automation</title>
+    <meta name="description" content="Discover how Python can automate your SEO tasks, check server status, and crawl websites efficiently.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-    </nav>
-    
+
+    <header>
+        <div class="logo">
+            <h1>How to Build SEO Friendly Websites</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="search.html"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About Me</a></li>
+                <li><a href="python.html"><i class="fab fa-python"></i> Python</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class="python-container">
         <header class="python-header">
             <i class="fab fa-python fa-4x"></i>
             <h1>Python & SEO Automation</h1>
-            <p>Why manually check 1000 pages when you can write a script</p>
+            <p>Why manually check 1000 pages when you can write a script?</p>
         </header>
 
         <section class="code-section">
             <h2>Example: Simple Status Checker</h2>
-            <p>This script checks if a websites is up and running:</p>
-            <div class="code-wrapper"><pre><code>
-                import request
-                url = "https://your-site.com"
-                response = request.get(url)
+            <p>This script checks if a website is up and running:</p>
+            <div class="code-wrapper">
+<pre><code>import requests
 
-                if response.status_code==200:
-                   print("Site is Healthy!")
-                else:
-                   print("Check Your server")
-            </code></pre>
-        </div>
+url = "https://your-site.com"
+response = requests.get(url)
+
+if response.status_code == 200:
+    print("Site is Healthy!")
+else:
+    print("Check Your Server")</code></pre>
+            </div>
         </section>
     </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 My SEO Journey | Designed by Iliyyw</p>
+            <div class="social-links">
+                <a href="#">LinkedIn</a>
+                <a href="#">GitHub</a>
+                <a href="https://t.me/iliyyw" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
